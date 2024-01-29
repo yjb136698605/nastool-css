@@ -1,0 +1,62 @@
+#toppic.can {background:center;}/*Clear Bottom Pic*/
+
+/*功能区字体颜色修改*/
+.card-body{
+   color: #3eb3e9;
+}
+
+/* 电视剧/动漫副字体颜色 */
+:host, :root {
+    --tblr-green-rgb: 50, 113, 174;
+    /*媒体同步常态*/
+   --tblr-primary: #3eb3e9;
+}
+/*媒体同步热点*/
+.btn-primary{
+    --tblr-btn-hover-bg: #6be9ff;
+}
+.subheader{
+    color: #6be9ff;
+}
+.card {
+    border-radius: 20px;
+}
+.btn {
+    border-radius: 20px;
+}
+/*背景图片等*/
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: url('https://img.picgo.net/2023/03/03/Rem67ab398e246fe2005.png') center / cover no-repeat;
+}
+body {
+    opacity: 0.85;
+}
+div>a>svg.icon-tabler-user {
+  /*头像的链接,可以自己改*/
+  background-image: url('https://img.pterclub.com/images/2023/03/19/rem-rezero.gif');
+  background-size: contain;
+  width: 36px!important;
+  height: 36px!important;
+  border-radius: 15%;
+}
+div>a>svg.icon-tabler-user>* {
+  visibility: hidden;
+}
+div>a>svg.icon-tabler-user:hover {
+  transform: scale(1.2);
+}
+
+ /*用于手机端图片背景，如果图片相同需要特殊优化*/
+@media(max-width: 768px) {
+body {
+background-image:url('https://img.picgo.net/2023/03/03/Rem67ab398e246fe2005.png');
+
+    }
+}
+table.mainouter{filter:alpha(opacity=85);opacity:0.85;}
